@@ -1,0 +1,1152 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .octicon {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .anchor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body .highlight {
+  background: #fff;
+}
+
+.markdown-body .highlight .h {
+  color: #333;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.markdown-body .highlight .mf,
+.markdown-body .highlight .mh,
+.markdown-body .highlight .mi,
+.markdown-body .highlight .mo,
+.markdown-body .highlight .il,
+.markdown-body .highlight .m {
+  color: #945277;
+}
+
+.markdown-body .highlight .s,
+.markdown-body .highlight .sb,
+.markdown-body .highlight .sc,
+.markdown-body .highlight .sd,
+.markdown-body .highlight .s2,
+.markdown-body .highlight .se,
+.markdown-body .highlight .sh,
+.markdown-body .highlight .si,
+.markdown-body .highlight .sx,
+.markdown-body .highlight .s1 {
+  color: #df5000;
+}
+
+.markdown-body .highlight .kc,
+.markdown-body .highlight .kd,
+.markdown-body .highlight .kn,
+.markdown-body .highlight .kp,
+.markdown-body .highlight .kr,
+.markdown-body .highlight .kt,
+.markdown-body .highlight .k,
+.markdown-body .highlight .o {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .kt {
+  color: #458;
+}
+
+.markdown-body .highlight .c,
+.markdown-body .highlight .cm,
+.markdown-body .highlight .c1 {
+  color: #998;
+  font-style: italic;
+}
+
+.markdown-body .highlight .cp,
+.markdown-body .highlight .cs,
+.markdown-body .highlight .cp .h {
+  color: #999;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .cs {
+  font-style: italic;
+}
+
+.markdown-body .highlight .n {
+  color: #333;
+}
+
+.markdown-body .highlight .na,
+.markdown-body .highlight .nv,
+.markdown-body .highlight .vc,
+.markdown-body .highlight .vg,
+.markdown-body .highlight .vi {
+  color: #008080;
+}
+
+.markdown-body .highlight .nb {
+  color: #0086B3;
+}
+
+.markdown-body .highlight .nc {
+  color: #458;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .no {
+  color: #094e99;
+}
+
+.markdown-body .highlight .ni {
+  color: #800080;
+}
+
+.markdown-body .highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nf {
+  color: #945277;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nn {
+  color: #555;
+}
+
+.markdown-body .highlight .nt {
+  color: #000080;
+}
+
+.markdown-body .highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+.markdown-body .highlight .gd {
+  color: #000;
+  background-color: #fdd;
+}
+
+.markdown-body .highlight .gd .x {
+  color: #000;
+  background-color: #faa;
+}
+
+.markdown-body .highlight .ge {
+  font-style: italic;
+}
+
+.markdown-body .highlight .gr {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .gh {
+  color: #999;
+}
+
+.markdown-body .highlight .gi {
+  color: #000;
+  background-color: #dfd;
+}
+
+.markdown-body .highlight .gi .x {
+  color: #000;
+  background-color: #afa;
+}
+
+.markdown-body .highlight .go {
+  color: #888;
+}
+
+.markdown-body .highlight .gp {
+  color: #555;
+}
+
+.markdown-body .highlight .gs {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gu {
+  color: #800080;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gt {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .ow {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .w {
+  color: #bbb;
+}
+
+.markdown-body .highlight .sr {
+  color: #017936;
+}
+
+.markdown-body .highlight .ss {
+  color: #8b467f;
+}
+
+.markdown-body .highlight .bp {
+  color: #999;
+}
+
+.markdown-body .highlight .gc {
+  color: #999;
+  background-color: #EAF2F5;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .highlight .pl-coc,
+.markdown-body .highlight .pl-entm,
+.markdown-body .highlight .pl-eoa,
+.markdown-body .highlight .pl-mai .pl-sf,
+.markdown-body .highlight .pl-pdv,
+.markdown-body .highlight .pl-sc,
+.markdown-body .highlight .pl-sr,
+.markdown-body .highlight .pl-v,
+.markdown-body .highlight .pl-vpf {
+  color: #0086b3;
+}
+
+.markdown-body .highlight .pl-eoac,
+.markdown-body .highlight .pl-mdht,
+.markdown-body .highlight .pl-mi1,
+.markdown-body .highlight .pl-mri,
+.markdown-body .highlight .pl-va,
+.markdown-body .highlight .pl-vpu {
+  color: #008080;
+}
+
+.markdown-body .highlight .pl-c,
+.markdown-body .highlight .pl-pdc {
+  color: #b4b7b4;
+  font-style: italic;
+}
+
+.markdown-body .highlight .pl-k,
+.markdown-body .highlight .pl-ko,
+.markdown-body .highlight .pl-kolp,
+.markdown-body .highlight .pl-mc,
+.markdown-body .highlight .pl-mr,
+.markdown-body .highlight .pl-ms,
+.markdown-body .highlight .pl-s,
+.markdown-body .highlight .pl-sok,
+.markdown-body .highlight .pl-st {
+  color: #6e5494;
+}
+
+.markdown-body .highlight .pl-ef,
+.markdown-body .highlight .pl-enf,
+.markdown-body .highlight .pl-enm,
+.markdown-body .highlight .pl-entc,
+.markdown-body .highlight .pl-eoi,
+.markdown-body .highlight .pl-sf,
+.markdown-body .highlight .pl-smc {
+  color: #d12089;
+}
+
+.markdown-body .highlight .pl-ens,
+.markdown-body .highlight .pl-eoai,
+.markdown-body .highlight .pl-kos,
+.markdown-body .highlight .pl-mh .pl-pdh,
+.markdown-body .highlight .pl-mp,
+.markdown-body .highlight .pl-pde,
+.markdown-body .highlight .pl-stp {
+  color: #458;
+}
+
+.markdown-body .highlight .pl-enti {
+  color: #d12089;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .pl-cce,
+.markdown-body .highlight .pl-enc,
+.markdown-body .highlight .pl-kou,
+.markdown-body .highlight .pl-mq {
+  color: #f93;
+}
+
+.markdown-body .highlight .pl-mp1 .pl-sf {
+  color: #458;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .pl-cos,
+.markdown-body .highlight .pl-ent,
+.markdown-body .highlight .pl-md,
+.markdown-body .highlight .pl-mdhf,
+.markdown-body .highlight .pl-ml,
+.markdown-body .highlight .pl-pdc1,
+.markdown-body .highlight .pl-pds,
+.markdown-body .highlight .pl-s1,
+.markdown-body .highlight .pl-scp,
+.markdown-body .highlight .pl-sol {
+  color: #df5000;
+}
+
+.markdown-body .highlight .pl-c1,
+.markdown-body .highlight .pl-cn,
+.markdown-body .highlight .pl-pse,
+.markdown-body .highlight .pl-pse .pl-s2,
+.markdown-body .highlight .pl-vi {
+  color: #a31515;
+}
+
+.markdown-body .highlight .pl-mb,
+.markdown-body .highlight .pl-pdb {
+  color: #df5000;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .pl-mi,
+.markdown-body .highlight .pl-pdi {
+  color: #6e5494;
+  font-style: italic;
+}
+
+.markdown-body .highlight .pl-ms1 {
+  background-color: #f5f5f5;
+}
+
+.markdown-body .highlight .pl-mdh,
+.markdown-body .highlight .pl-mdi {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .pl-mdr {
+  color: #0086b3;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .pl-s2 {
+  color: #333;
+}
+
+.markdown-body .highlight .pl-ii {
+  background-color: #df5000;
+  color: #fff;
+}
+
+.markdown-body .highlight .pl-ib {
+  background-color: #f93;
+}
+
+.markdown-body .highlight .pl-id {
+  background-color: #a31515;
+  color: #fff;
+}
+
+.markdown-body .highlight .pl-iu {
+  background-color: #b4b7b4;
+}
+
+.markdown-body .highlight .pl-mo {
+  color: #969896;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  float: left;
+  margin: 0.3em 0 0.25em -1.6em;
+  vertical-align: middle;
+}</style><title>tutorial_1</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-tutorial-1" class="anchor" href="#tutorial-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tutorial 1</h1>
+
+<h2>
+<a id="user-content-introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>In this tutorial I will walk you through on how to work with the GLSL language. We will first start out with a triangle and eventually work on a cube.</p>
+
+<h2>
+<a id="user-content-singlemulti-colored-triangle" class="anchor" href="#singlemulti-colored-triangle" aria-hidden="true"><span class="octicon octicon-link"></span></a>Single/Multi Colored Triangle</h2>
+
+<p>Upon inital execution of the tutorial program the triangle should be already a single color. As was shown in the video it is fairly easy to change the color of the whole triangle. But what if we wanted half the triangle to be a different color, say red? Going back to our roles of the shaders a vertex shader handles only vertex coordinate information. Fragment Shaders on the other hand are primarily concerned about the color of fragments which if you remember are a sampling of pixels of a certain area. </p>
+
+<p>One built in attribute of fragment shaders is whats called <code>gl_FragCoord</code>. It provides the fragment coordinates in screen coordinates. I have provided a uniform 2 dimensional vector called screen with contain the screen's width and height. To make half the triangle blue we can check the fragment's coordinate with it position on the screen. This can be done in the <strong>Fragment Shader</strong> like this:</p>
+
+<div class="highlight highlight-source-c++"><pre>#version <span class="pl-c1">410</span>
+
+uniform vec2 screen;
+out vec4 FragColor;
+
+<span class="pl-k">void</span> <span class="pl-en">main</span>() {
+  <span class="pl-k">if</span>(gl_FragCoord.<span class="pl-smi">x</span>/screen.<span class="pl-smi">x</span> &lt; <span class="pl-c1">0.5</span>){
+    FragColor = <span class="pl-c1">vec4</span>(<span class="pl-c1">0.0</span>,<span class="pl-c1">1.0</span>,<span class="pl-c1">0.0</span>,<span class="pl-c1">1.0</span>);
+  }<span class="pl-k">else</span>{
+    FragColor = <span class="pl-c1">vec4</span>(<span class="pl-c1">0.0</span>,<span class="pl-c1">0.0</span>,<span class="pl-c1">1.0</span>,<span class="pl-c1">1.0</span>);
+  }
+}</pre></div>
+
+<p>Our <strong>Vertex Shader</strong> should look like this as well:</p>
+
+<div class="highlight highlight-source-c++"><pre>#version <span class="pl-c1">410</span>
+
+in vec3 VertexPosition;
+
+
+<span class="pl-k">void</span> <span class="pl-en">main</span>() {
+    gl_Position = <span class="pl-c1">vec4</span>(VertexPosition.<span class="pl-smi">x</span>, VertexPosition.<span class="pl-smi">y</span> , VertexPosition.<span class="pl-smi">z</span> , <span class="pl-c1">1.0</span>);
+}</pre></div>
+
+<p>The result should look like this assuming the other color was green:
+<a href="shader_tutorial/images/2_colored_triangle.png" target="_blank"><img src="shader_tutorial/images/2_colored_triangle.png" alt="Two Colored Triangle" style="max-width:100%;"></a></p>
+
+<h3>
+<a id="user-content-explanation-of-code" class="anchor" href="#explanation-of-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Explanation of code</h3>
+
+<p>The version number needs to be at the top of the file. This tells OpenGL what GLSL language to compile it as. In our case it is version 4.1. After this we include all of our variables.</p>
+
+<p>Remember in GLSL there are two type of variables, attributes and uniforms. Our attributes are designated with the key word <code>in</code> or the keyword <code>out</code>. Remember these variables are for data that changes frequently and are composed of a large dataset. The <code>in</code> keyword signifies what it implies, that the variable is being supplied the data externally. It also means that it cannot be changed. <code>out</code> signifies what is being returned from our shader program. There are some built in attributes as well which as designated with the prefix <code>gl_</code>. </p>
+
+<p>Uniform variables if you remember are variables that change less frequent and are composed of a much smaller dataset. The only uniform we are using in this example is <code>screen</code>. This gives us the width and height of the window as a two dimensional vector;</p>
+
+<p>So in the VertexShader we are telling OpenGL to map our VertexPosition Coordinates to our Clipping Coordinates for the triangle. This is <strong>NOT</strong> usually how you would do it. The reason this works is that the triangle's vertex positions range from -0.8 to 0.8. This fits nicely into our clipping coordinates and so for this example it was adequate. Later only we will go over how to project these coordinates in a more appropriate manner. Another thing to note is that this shader is run for every vertex OpenGL will draw.</p>
+
+<p>In the Fragment Shader we use a custom uniform called <code>screen</code>. We use it to get what percentage of the screen the the fragment is located. We then compare it to a percentage, in this case <code>0.5</code> and set the fragment color to either blue or green.</p>
+
+<h2>
+<a id="user-content-built-in-colored-triangle" class="anchor" href="#built-in-colored-triangle" aria-hidden="true"><span class="octicon octicon-link"></span></a>Built-In Colored Triangle</h2>
+
+<p>In the last example we hardcoded the color of the triangle within the shader. In our program though our vertices have a defined color but we are ignoring them. To use the color we need add this attribute to our vertex shader:</p>
+
+<div class="highlight highlight-source-c++"><pre>in vec3 VertexColor;</pre></div>
+
+<p>We will not be using this in the vertex shader but will be passing the attribute to our fragment shader. Any custom out attributes we define can used later in the pipeline such as in our fragment shader. So this means we also need to include an out attribut in our vertex shader:</p>
+
+<div class="highlight highlight-source-c++"><pre>out vec3 Color;</pre></div>
+
+<p>Then in our main we would assign VertexColor to Color:</p>
+
+<div class="highlight highlight-source-c++"><pre><span class="pl-k">void</span> <span class="pl-en">main</span>() {
+    Color = VertexColor;
+    gl_Position = <span class="pl-c1">vec4</span>(VertexPosition.<span class="pl-smi">x</span>, VertexPosition.<span class="pl-smi">y</span> , VertexPosition.<span class="pl-smi">z</span> , <span class="pl-c1">1.0</span>);
+}</pre></div>
+
+<p>We can now use the Color attribute in our fragment shader. To do this we also need to add the Color attribute like this:</p>
+
+<div class="highlight highlight-source-c++"><pre>in vec3 Color;</pre></div>
+
+<p>And to use the Color in our main we would do something like this:</p>
+
+<div class="highlight highlight-source-c++"><pre><span class="pl-k">void</span> <span class="pl-en">main</span>() {
+  FragColor = <span class="pl-c1">vec4</span>(Color,<span class="pl-c1">1.0</span>);
+}</pre></div>
+
+<p>You should notice that I did not just assign Color to FragColor but rather created a new vec4 using Color. This is because FragColor is a vec4 and Color is a vec3. we very easily could have defined Color as a vec4 and just simply assigned it but since the alpha value is constant we didn't need to. Compiling this should result in this:
+<a href="shader_tutorial/images/built_in_colored_triangle.png" target="_blank"><img src="shader_tutorial/images/built_in_colored_triangle.png" alt="Built In Colored Triangle" style="max-width:100%;"></a></p>
+
+<h3>
+<a id="user-content-why-does-this-do-this" class="anchor" href="#why-does-this-do-this" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why does this do this?</h3>
+
+<p>First off we need to realize that our VertexColor attribute only specified <strong>3 colors</strong>, not all the colors that we see. When our fragments are generated it samples the colors of the vertices around the fragment. This creates an effect that the colors are mixed or interpolated. This is why the colors become more defined as you approach the actual vertices as the fragment is closer and should have more of that color than the other vertice colors.</p>
+
+<h2>
+<a id="user-content-changing-color-triangle" class="anchor" href="#changing-color-triangle" aria-hidden="true"><span class="octicon octicon-link"></span></a>Changing Color Triangle</h2>
+
+<p>In the previous example we used the built int colored vertices for displaying the triangle. What if we wanted to triangle to change colors after a certain amount of time? There is another uniform called <code>timer</code>. It is a float that increments 0.01 every time the screen gets rerenders.</p>
+
+<p>Another thing to keep in mind is that GLSL supports basic math operations such at matrix or trig operations. In our example the <code>sin()</code> function will work splendidly as if will let use oscilate between colors by imposing one of the colors onto the sin curve.</p>
+
+<p>To do this we are going to use the equation <code>0.5 + 0.5 * sin(timer)</code>. So how does this work? Remember that each color value must be in the range of 0 and 1. And the sin function will return a value fron -1 to 1. So by multiplying the sin value by 0.5 we can get a value from -0.5 and 0.5. Add this to 0.5 and we effectively get an oscillating range from 0 to 1.</p>
+
+<p>So lets try this out. First off the vertex shader can stay the same as the last tutorial but the fragment shader needs to be changed to look like this:</p>
+
+<div class="highlight highlight-source-c++"><pre>#version <span class="pl-c1">410</span>
+
+in vec3 Color;
+uniform <span class="pl-k">float</span> timer;
+uniform vec2 screen;
+out vec4 FragColor;
+
+<span class="pl-k">void</span> <span class="pl-en">main</span>() {
+  FragColor = <span class="pl-c1">vec4</span>(Color.<span class="pl-smi">x</span>, Color.<span class="pl-smi">y</span>, <span class="pl-c1">0.5</span> + <span class="pl-c1">0.5</span> * <span class="pl-c1">sin</span>(timer), <span class="pl-c1">1.0</span>);
+}</pre></div>
+
+<p>So what we ended up doing here is using the red and green colors from our triangle and then oscillating our blue value. We should get a triangle like this but with the colors gradually changing:</p>
+
+<p><a href="shader_tutorial/images/changing_color_triangle.png" target="_blank"><img src="shader_tutorial/images/changing_color_triangle.png" alt="Changing Color Triangle" style="max-width:100%;"></a></p>
+
+<h2>
+<a id="user-content-transformations-and-projections" class="anchor" href="#transformations-and-projections" aria-hidden="true"><span class="octicon octicon-link"></span></a>Transformations and Projections</h2>
+
+<p>Up until now we have hardly touched the vertex shader, but the vertex shader is one of the most important shaders that we use. Currently our triangle is being directly mapped to clipping coordinates. This is not a good idea and is not how you usually work with your vertices. </p>
+
+<p>If you remember, I showed in the video tutorial how to translate the triangle by changing its x coordinate. This worked well enough for a sanity check but it is a pain to try and do everything through clipping coordinates. It would be much better if we were able to transform our models using world coordinates and then project them to clipping coordinates. </p>
+
+<p>If you remember in OpenGL 2.1, setting up a 2 dimensional world consisted of using gluOrtho2d. OpenGL has now deprecated that function. The vertex shader is now responsible for performing all transformations and projections. This system is commonly dubbed the "MVP". This corresponds to:</p>
+
+<ul>
+<li>Modeling Transformation
+
+<ul>
+<li>(Model Coordinates -&gt; World Coordinates) </li>
+<li>Position, Scale, Rotate Model in World</li>
+</ul>
+</li>
+<li>Viewing Transformation
+
+<ul>
+<li>(World Coordinates -&gt; View/Eye Coordinates) </li>
+<li>Position Camera</li>
+</ul>
+</li>
+<li>Projection Transformation
+
+<ul>
+<li>(View/Eye Coordinates -&gt; Clip Coordinates) </li>
+<li>Orthographic or Perspective?</li>
+</ul>
+</li>
+</ul>
+
+<p>There's a couple of things to note here. Since we are rendering a 2 dimensional world we will not be implementing the viewing transformation. Our "camera" is already positioned where it needs to be. If we needed to move it we could simply translate the entire world. Usually in 3d you would use a function like gluLookAt to position the camera. We will do this later in another tutorial.</p>
+
+<p>First thing we need to do is create our gluOrtho function. Functions operate just like they do in c++. Put these functions above our main:</p>
+
+<div class="highlight highlight-source-c++"><pre>mat4 <span class="pl-en">gluOrtho</span>(<span class="pl-k">float</span> left, <span class="pl-k">float</span> right, <span class="pl-k">float</span> bottom, <span class="pl-k">float</span> top, <span class="pl-k">float</span> near, <span class="pl-k">float</span> far){
+  mat4 mat;
+
+  <span class="pl-k">float</span> tx = -(right + left)/(right-left);
+  <span class="pl-k">float</span> ty = -(top + bottom)/(top-bottom);
+  <span class="pl-k">float</span> tz = -(far + near)/(far-near);
+
+  mat[<span class="pl-c1">0</span>] = <span class="pl-c1">vec4</span>( <span class="pl-c1">2.0</span>/(right-left),  <span class="pl-c1">0.0</span>,               <span class="pl-c1">0.0</span>,              tx );
+  mat[<span class="pl-c1">1</span>] = <span class="pl-c1">vec4</span>( <span class="pl-c1">0.0</span>,               <span class="pl-c1">2.0</span>/(top-bottom),  <span class="pl-c1">0.0</span>,              tx );
+  mat[<span class="pl-c1">2</span>] = <span class="pl-c1">vec4</span>( <span class="pl-c1">0.0</span>,               <span class="pl-c1">0.0</span>,               -<span class="pl-c1">2.0</span>/(far-near),  ty );
+  mat[<span class="pl-c1">3</span>] = <span class="pl-c1">vec4</span>( <span class="pl-c1">0.0</span>,               <span class="pl-c1">0.0</span>,               <span class="pl-c1">0.0</span>,              <span class="pl-c1">1.0</span> );
+  <span class="pl-k">return</span> <span class="pl-c1">transpose</span>(mat);
+}
+
+mat4 <span class="pl-en">gluOrtho2d</span>(<span class="pl-k">float</span> left, <span class="pl-k">float</span> right, <span class="pl-k">float</span> bottom, <span class="pl-k">float</span> top){
+  <span class="pl-k">return</span> <span class="pl-c1">gluOrtho</span>(left,right,bottom,top,-<span class="pl-c1">1</span>,<span class="pl-c1">1</span>);
+}</pre></div>
+
+<p>So what does this do? This creates and orthographic 2d projection of our world and projects it to clipping coordinates. I should note that OpenGL matrices are defined in Column Major Order. If you are familiar with the ortho matrix you may notice that I have entered it in Row Major Order. This is not the most efficient way of creating the matrix but I have done it for readability. On the return statement the transpose function converts this matrix from Row Major to Column Major Order. Another thing to note is that for 2 dimensional worlds we will use the <code>gluOrtho2d</code>. It uses the <code>gluOrtho</code> with near being -1 and far being 1. We can use this to set depth if we wanted.</p>
+
+<h3>
+<a id="user-content-so-how-do-we-use-it" class="anchor" href="#so-how-do-we-use-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>So how do we use it?</h3>
+
+<p>Well first if we follow the MVP system we need to first perform modelling transformations. Our triangle's modeling coordinates range from -0.8 to 0.8. If we forget this step we may not be able to see our triangle. For now we will just scale our triangle so that is can be seen. Lets scale it by 100. At this point we may want to create another function for scaling. It could look like this:</p>
+
+<div class="highlight highlight-source-c++"><pre>mat4 <span class="pl-en">scale</span>(<span class="pl-k">float</span> x, <span class="pl-k">float</span> y, <span class="pl-k">float</span> z){
+  mat4 mat;
+
+  mat[<span class="pl-c1">0</span>] = <span class="pl-c1">vec4</span>(x, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>);
+  mat[<span class="pl-c1">1</span>] = <span class="pl-c1">vec4</span>(<span class="pl-c1">0</span>, y, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>);
+  mat[<span class="pl-c1">2</span>] = <span class="pl-c1">vec4</span>(<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, z, <span class="pl-c1">0</span>);
+  mat[<span class="pl-c1">3</span>] = <span class="pl-c1">vec4</span>(<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">1</span>);
+
+  <span class="pl-k">return</span> <span class="pl-c1">transpose</span>(mat);
+}</pre></div>
+
+<p>If we used this now with out our gluOrtho2d we would get a super zoomed in view of our triangle as we have not projected it to clipping coordinates. So lets use both of them together like this:</p>
+
+<div class="highlight highlight-source-c++"><pre><span class="pl-k">void</span> <span class="pl-en">main</span>() {
+    Color = VertexColor;
+    gl_Position = <span class="pl-c1">gluOrtho2d</span>(-<span class="pl-c1">250</span>,<span class="pl-c1">250</span>,-<span class="pl-c1">250</span>,<span class="pl-c1">250</span>) * <span class="pl-c1">scale</span>(<span class="pl-c1">100</span>, <span class="pl-c1">100</span>, <span class="pl-c1">1</span>) * <span class="pl-c1">vec4</span>(VertexPosition.<span class="pl-smi">x</span>, VertexPosition.<span class="pl-smi">y</span> , VertexPosition.<span class="pl-smi">z</span> , <span class="pl-c1">1.0</span>);
+}</pre></div>
+
+<p>If we run this we should get something like this:
+<a href="shader_tutorial/images/transformed_triangle.png" target="_blank"><img src="shader_tutorial/images/transformed_triangle.png" alt="Transformed Triangle" style="max-width:100%;"></a></p>
+
+<p>So what is going on here? First we scale our vector 4 by 100 in the x and y direction. We want the z component to stay the same so we scale it by 1. We then set up our world coordinates using <code>gluOrtho2d</code>. We use -250 and 250 as our model has negative components and so would not be viewed fully on our screen. This works for this example but we can do better.</p>
+
+<p>Lets suppose we want world coordinates to be from 0 to 500 in the x and y direction. I we change our gluOrtho2d call to <code>gluOrtho2d(0,500,0,500)</code> we would notice our triangle gets clipped. We need to translate the triangle to get it into position. Lets add another function for translating:</p>
+
+<div class="highlight highlight-source-c++"><pre>mat4 <span class="pl-en">translate</span>(<span class="pl-k">float</span> x, <span class="pl-k">float</span> y, <span class="pl-k">float</span> z){
+  mat4 mat;
+
+  mat[<span class="pl-c1">0</span>] = <span class="pl-c1">vec4</span>(<span class="pl-c1">1</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>, x);
+  mat[<span class="pl-c1">1</span>] = <span class="pl-c1">vec4</span>(<span class="pl-c1">0</span>, <span class="pl-c1">1</span>, <span class="pl-c1">0</span>, y);
+  mat[<span class="pl-c1">2</span>] = <span class="pl-c1">vec4</span>(<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">1</span>, z);
+  mat[<span class="pl-c1">3</span>] = <span class="pl-c1">vec4</span>(<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">1</span>);
+
+  <span class="pl-k">return</span> <span class="pl-c1">transpose</span>(mat);
+}</pre></div>
+
+<p>We can use it like this:</p>
+
+<div class="highlight highlight-source-c++"><pre>gl_Position = gluOrtho2d(<span class="pl-c1">0</span>,<span class="pl-c1">500</span>,<span class="pl-c1">0</span>,<span class="pl-c1">500</span>) * <span class="pl-en">translate</span>(<span class="pl-c1">250</span>,<span class="pl-c1">250</span>,<span class="pl-c1">0</span>) * scale(<span class="pl-c1">100</span>, <span class="pl-c1">100</span>, <span class="pl-c1">1</span>)  * vec4(VertexPosition.x, VertexPosition.y , VertexPosition.z , <span class="pl-c1">1.0</span>);    </pre></div>
+
+<p>If youve run into any problems this is what our vertex shader should look like:</p>
+
+<div class="highlight highlight-source-c++"><pre>#version <span class="pl-c1">410</span>
+
+in vec3 VertexPosition;
+in vec3 VertexColor;
+
+out vec3 Color;
+
+
+mat4 <span class="pl-en">gluOrtho</span>(<span class="pl-k">float</span> left, <span class="pl-k">float</span> right, <span class="pl-k">float</span> bottom, <span class="pl-k">float</span> top, <span class="pl-k">float</span> near, <span class="pl-k">float</span> far){
+  mat4 mat;
+
+  <span class="pl-k">float</span> tx = -(right + left)/(right-left);
+  <span class="pl-k">float</span> ty = -(top + bottom)/(top-bottom);
+  <span class="pl-k">float</span> tz = -(far + near)/(far-near);
+
+  mat[<span class="pl-c1">0</span>] = <span class="pl-c1">vec4</span>( <span class="pl-c1">2.0</span>/(right-left),  <span class="pl-c1">0.0</span>,               <span class="pl-c1">0.0</span>,              tx );
+  mat[<span class="pl-c1">1</span>] = <span class="pl-c1">vec4</span>( <span class="pl-c1">0.0</span>,               <span class="pl-c1">2.0</span>/(top-bottom),  <span class="pl-c1">0.0</span>,              tx );
+  mat[<span class="pl-c1">2</span>] = <span class="pl-c1">vec4</span>( <span class="pl-c1">0.0</span>,               <span class="pl-c1">0.0</span>,               -<span class="pl-c1">2.0</span>/(far-near),  ty );
+  mat[<span class="pl-c1">3</span>] = <span class="pl-c1">vec4</span>( <span class="pl-c1">0.0</span>,               <span class="pl-c1">0.0</span>,               <span class="pl-c1">0.0</span>,              <span class="pl-c1">1.0</span> );
+  <span class="pl-k">return</span> <span class="pl-c1">transpose</span>(mat);
+}
+
+mat4 <span class="pl-en">gluOrtho2d</span>(<span class="pl-k">float</span> left, <span class="pl-k">float</span> right, <span class="pl-k">float</span> bottom, <span class="pl-k">float</span> top){
+  <span class="pl-k">return</span> <span class="pl-c1">gluOrtho</span>(left,right,bottom,top,-<span class="pl-c1">1</span>,<span class="pl-c1">1</span>);
+}
+mat4 <span class="pl-en">scale</span>(<span class="pl-k">float</span> x, <span class="pl-k">float</span> y, <span class="pl-k">float</span> z){
+  mat4 mat;
+
+  mat[<span class="pl-c1">0</span>] = <span class="pl-c1">vec4</span>(x, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>);
+  mat[<span class="pl-c1">1</span>] = <span class="pl-c1">vec4</span>(<span class="pl-c1">0</span>, y, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>);
+  mat[<span class="pl-c1">2</span>] = <span class="pl-c1">vec4</span>(<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, z, <span class="pl-c1">0</span>);
+  mat[<span class="pl-c1">3</span>] = <span class="pl-c1">vec4</span>(<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">1</span>);
+
+  <span class="pl-k">return</span> <span class="pl-c1">transpose</span>(mat);
+}
+
+mat4 <span class="pl-en">translate</span>(<span class="pl-k">float</span> x, <span class="pl-k">float</span> y, <span class="pl-k">float</span> z){
+  mat4 mat;
+
+  mat[<span class="pl-c1">0</span>] = <span class="pl-c1">vec4</span>(<span class="pl-c1">1</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>, x);
+  mat[<span class="pl-c1">1</span>] = <span class="pl-c1">vec4</span>(<span class="pl-c1">0</span>, <span class="pl-c1">1</span>, <span class="pl-c1">0</span>, y);
+  mat[<span class="pl-c1">2</span>] = <span class="pl-c1">vec4</span>(<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">1</span>, z);
+  mat[<span class="pl-c1">3</span>] = <span class="pl-c1">vec4</span>(<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">1</span>);
+
+  <span class="pl-k">return</span> <span class="pl-c1">transpose</span>(mat);
+}
+
+<span class="pl-k">void</span> <span class="pl-en">main</span>() {
+    Color = VertexColor;
+    gl_Position = <span class="pl-c1">gluOrtho2d</span>(<span class="pl-c1">0</span>,<span class="pl-c1">500</span>,<span class="pl-c1">0</span>,<span class="pl-c1">500</span>) * <span class="pl-c1">translate</span>(<span class="pl-c1">250</span>,<span class="pl-c1">250</span>,<span class="pl-c1">0</span>) * <span class="pl-c1">scale</span>(<span class="pl-c1">100</span>, <span class="pl-c1">100</span>, <span class="pl-c1">1</span>)  * <span class="pl-c1">vec4</span>(VertexPosition.<span class="pl-smi">x</span>, VertexPosition.<span class="pl-smi">y</span> , VertexPosition.<span class="pl-smi">z</span> , <span class="pl-c1">1.0</span>);
+}</pre></div>
+
+<p>Our fragment shader should look like this as well:</p>
+
+<div class="highlight highlight-source-c++"><pre>#version <span class="pl-c1">410</span>
+
+in vec3 Color;
+uniform <span class="pl-k">float</span> timer;
+uniform vec2 screen;
+out vec4 FragColor;
+
+<span class="pl-k">void</span> <span class="pl-en">main</span>() {
+  FragColor = <span class="pl-c1">vec4</span>(Color.<span class="pl-smi">x</span>,Color.<span class="pl-smi">y</span>,<span class="pl-c1">0.5</span>+<span class="pl-c1">0.5</span>*<span class="pl-c1">sin</span>(timer),<span class="pl-c1">1.0</span>);
+}</pre></div>
+
+<p>That's it! The next tutorial will work with using 3d transformations with a cube.</p>
+
+<p><a href="./tutorial_2.html">3d Tutorial</a></p>
+</article></body></html>

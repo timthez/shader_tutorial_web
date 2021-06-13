@@ -1,0 +1,1106 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .octicon {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .anchor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body .highlight {
+  background: #fff;
+}
+
+.markdown-body .highlight .h {
+  color: #333;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.markdown-body .highlight .mf,
+.markdown-body .highlight .mh,
+.markdown-body .highlight .mi,
+.markdown-body .highlight .mo,
+.markdown-body .highlight .il,
+.markdown-body .highlight .m {
+  color: #945277;
+}
+
+.markdown-body .highlight .s,
+.markdown-body .highlight .sb,
+.markdown-body .highlight .sc,
+.markdown-body .highlight .sd,
+.markdown-body .highlight .s2,
+.markdown-body .highlight .se,
+.markdown-body .highlight .sh,
+.markdown-body .highlight .si,
+.markdown-body .highlight .sx,
+.markdown-body .highlight .s1 {
+  color: #df5000;
+}
+
+.markdown-body .highlight .kc,
+.markdown-body .highlight .kd,
+.markdown-body .highlight .kn,
+.markdown-body .highlight .kp,
+.markdown-body .highlight .kr,
+.markdown-body .highlight .kt,
+.markdown-body .highlight .k,
+.markdown-body .highlight .o {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .kt {
+  color: #458;
+}
+
+.markdown-body .highlight .c,
+.markdown-body .highlight .cm,
+.markdown-body .highlight .c1 {
+  color: #998;
+  font-style: italic;
+}
+
+.markdown-body .highlight .cp,
+.markdown-body .highlight .cs,
+.markdown-body .highlight .cp .h {
+  color: #999;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .cs {
+  font-style: italic;
+}
+
+.markdown-body .highlight .n {
+  color: #333;
+}
+
+.markdown-body .highlight .na,
+.markdown-body .highlight .nv,
+.markdown-body .highlight .vc,
+.markdown-body .highlight .vg,
+.markdown-body .highlight .vi {
+  color: #008080;
+}
+
+.markdown-body .highlight .nb {
+  color: #0086B3;
+}
+
+.markdown-body .highlight .nc {
+  color: #458;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .no {
+  color: #094e99;
+}
+
+.markdown-body .highlight .ni {
+  color: #800080;
+}
+
+.markdown-body .highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nf {
+  color: #945277;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nn {
+  color: #555;
+}
+
+.markdown-body .highlight .nt {
+  color: #000080;
+}
+
+.markdown-body .highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+.markdown-body .highlight .gd {
+  color: #000;
+  background-color: #fdd;
+}
+
+.markdown-body .highlight .gd .x {
+  color: #000;
+  background-color: #faa;
+}
+
+.markdown-body .highlight .ge {
+  font-style: italic;
+}
+
+.markdown-body .highlight .gr {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .gh {
+  color: #999;
+}
+
+.markdown-body .highlight .gi {
+  color: #000;
+  background-color: #dfd;
+}
+
+.markdown-body .highlight .gi .x {
+  color: #000;
+  background-color: #afa;
+}
+
+.markdown-body .highlight .go {
+  color: #888;
+}
+
+.markdown-body .highlight .gp {
+  color: #555;
+}
+
+.markdown-body .highlight .gs {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gu {
+  color: #800080;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gt {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .ow {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .w {
+  color: #bbb;
+}
+
+.markdown-body .highlight .sr {
+  color: #017936;
+}
+
+.markdown-body .highlight .ss {
+  color: #8b467f;
+}
+
+.markdown-body .highlight .bp {
+  color: #999;
+}
+
+.markdown-body .highlight .gc {
+  color: #999;
+  background-color: #EAF2F5;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .highlight .pl-coc,
+.markdown-body .highlight .pl-entm,
+.markdown-body .highlight .pl-eoa,
+.markdown-body .highlight .pl-mai .pl-sf,
+.markdown-body .highlight .pl-pdv,
+.markdown-body .highlight .pl-sc,
+.markdown-body .highlight .pl-sr,
+.markdown-body .highlight .pl-v,
+.markdown-body .highlight .pl-vpf {
+  color: #0086b3;
+}
+
+.markdown-body .highlight .pl-eoac,
+.markdown-body .highlight .pl-mdht,
+.markdown-body .highlight .pl-mi1,
+.markdown-body .highlight .pl-mri,
+.markdown-body .highlight .pl-va,
+.markdown-body .highlight .pl-vpu {
+  color: #008080;
+}
+
+.markdown-body .highlight .pl-c,
+.markdown-body .highlight .pl-pdc {
+  color: #b4b7b4;
+  font-style: italic;
+}
+
+.markdown-body .highlight .pl-k,
+.markdown-body .highlight .pl-ko,
+.markdown-body .highlight .pl-kolp,
+.markdown-body .highlight .pl-mc,
+.markdown-body .highlight .pl-mr,
+.markdown-body .highlight .pl-ms,
+.markdown-body .highlight .pl-s,
+.markdown-body .highlight .pl-sok,
+.markdown-body .highlight .pl-st {
+  color: #6e5494;
+}
+
+.markdown-body .highlight .pl-ef,
+.markdown-body .highlight .pl-enf,
+.markdown-body .highlight .pl-enm,
+.markdown-body .highlight .pl-entc,
+.markdown-body .highlight .pl-eoi,
+.markdown-body .highlight .pl-sf,
+.markdown-body .highlight .pl-smc {
+  color: #d12089;
+}
+
+.markdown-body .highlight .pl-ens,
+.markdown-body .highlight .pl-eoai,
+.markdown-body .highlight .pl-kos,
+.markdown-body .highlight .pl-mh .pl-pdh,
+.markdown-body .highlight .pl-mp,
+.markdown-body .highlight .pl-pde,
+.markdown-body .highlight .pl-stp {
+  color: #458;
+}
+
+.markdown-body .highlight .pl-enti {
+  color: #d12089;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .pl-cce,
+.markdown-body .highlight .pl-enc,
+.markdown-body .highlight .pl-kou,
+.markdown-body .highlight .pl-mq {
+  color: #f93;
+}
+
+.markdown-body .highlight .pl-mp1 .pl-sf {
+  color: #458;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .pl-cos,
+.markdown-body .highlight .pl-ent,
+.markdown-body .highlight .pl-md,
+.markdown-body .highlight .pl-mdhf,
+.markdown-body .highlight .pl-ml,
+.markdown-body .highlight .pl-pdc1,
+.markdown-body .highlight .pl-pds,
+.markdown-body .highlight .pl-s1,
+.markdown-body .highlight .pl-scp,
+.markdown-body .highlight .pl-sol {
+  color: #df5000;
+}
+
+.markdown-body .highlight .pl-c1,
+.markdown-body .highlight .pl-cn,
+.markdown-body .highlight .pl-pse,
+.markdown-body .highlight .pl-pse .pl-s2,
+.markdown-body .highlight .pl-vi {
+  color: #a31515;
+}
+
+.markdown-body .highlight .pl-mb,
+.markdown-body .highlight .pl-pdb {
+  color: #df5000;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .pl-mi,
+.markdown-body .highlight .pl-pdi {
+  color: #6e5494;
+  font-style: italic;
+}
+
+.markdown-body .highlight .pl-ms1 {
+  background-color: #f5f5f5;
+}
+
+.markdown-body .highlight .pl-mdh,
+.markdown-body .highlight .pl-mdi {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .pl-mdr {
+  color: #0086b3;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .pl-s2 {
+  color: #333;
+}
+
+.markdown-body .highlight .pl-ii {
+  background-color: #df5000;
+  color: #fff;
+}
+
+.markdown-body .highlight .pl-ib {
+  background-color: #f93;
+}
+
+.markdown-body .highlight .pl-id {
+  background-color: #a31515;
+  color: #fff;
+}
+
+.markdown-body .highlight .pl-iu {
+  background-color: #b4b7b4;
+}
+
+.markdown-body .highlight .pl-mo {
+  color: #969896;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  float: left;
+  margin: 0.3em 0 0.25em -1.6em;
+  vertical-align: middle;
+}</style><title>final</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h1>
+
+<p>Setting up a working environment of modern OpenGL is not a trivial task on the mac. I have adapted my tutorial from Tom Dalling's XCode Project: <a href="http://www.tomdalling.com/blog/modern-opengl/01-getting-started-in-xcode-and-visual-cpp">getting-started-in-xcode-and-visual-cpp</a>. The project includes many dependencies such as:</p>
+
+<ul>
+<li>glfw
+
+<ul>
+<li>Handles Windowing</li>
+<li>Setting Opengl contexts</li>
+</ul>
+</li>
+<li>glew
+
+<ul>
+<li>Compiling &amp; Linking Shaders</li>
+<li>Extends OpenGL library</li>
+</ul>
+</li>
+<li>glm
+
+<ul>
+<li>Math operations</li>
+<li>opengl operations were deprecated in opengl 4</li>
+<li>useful matrix functions such as gluLookat, gluOrtho, etc</li>
+</ul>
+</li>
+</ul>
+
+<p>As I do not prefer XCode I have created my own project that is built using a makefile using the g++ compiler. In the video below I walk through how to setup the project and a brief introduction to the tutorial program's features and how to use them. The project is located <a href="https://github.com/timthez/shader_tutorial">here</a>.
+</p>
+<object style="height:270px;width:480px;border:0;" frameborder="0" data="https://www.youtube.com/embed/meOxskDqV5Q?hl=en&amp;autoplay=0&amp;cc_load_policy=0&amp;loop=0&amp;iv_load_policy=0&amp;fs=1&amp;showinfo=1"></object>
+<h1>
+<a id="user-content-requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h1>
+
+<ul>
+<li>Mac that supports OpenGL 4.1 Core
+
+<ul>
+<li>To determine if your Mac supports v4.1 or to see what features it does support download <a href="https://itunes.apple.com/us/app/opengl-extensions-viewer/id444052073?mt=12">opengl-extensions-viewer</a> </li>
+</ul>
+</li>
+<li>g++ compiler</li>
+<li>make command</li>
+</ul>
+
+<p>You may see around the web and in the opengl-extensions-viewer application the terms opengl compatibility and core version. The compatibility version is simply a version that supports both the old and the new OpenGL graphics pipeline. The differences between the different core versions are as follows:</p>
+
+<ul>
+<li>After OpenGL 2 shaders became available but were optional
+
+<ul>
+<li>Vertex Shaders</li>
+<li>Fragment Shaders</li>
+</ul>
+</li>
+<li>Opengl 3
+
+<ul>
+<li>Vertex Shaders required</li>
+<li>Fragment Shaders</li>
+<li>Geometry shaders</li>
+</ul>
+</li>
+<li>OpenGL 4
+
+<ul>
+<li>Vertex Shaders required</li>
+<li>Fragment Shaders</li>
+<li>Geometry Shaders</li>
+<li>Tesselation Shaders</li>
+<li>Compute Shaders (4.3)</li>
+</ul>
+</li>
+</ul>
+
+<h1>
+<a id="user-content-overview-of-shaders" class="anchor" href="#overview-of-shaders" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview of Shaders</h1>
+
+<h2>
+<a id="user-content-opengl-fixed-function-graphics-pipeline" class="anchor" href="#opengl-fixed-function-graphics-pipeline" aria-hidden="true"><span class="octicon octicon-link"></span></a>OpenGL Fixed Function Graphics Pipeline</h2>
+
+<p>Early OpenGL used what was called the fixed function pipeline. It did a couple of things very well but whenever a developer wanted to tweak the way it did something it became a nightmare. It provided some standard ways of doing things but since it was fixed, it was very oppinionated in how things were done. This led to performance hits and lots of hackery to get it to do what was wanted. Eventually some graphics card manufacturers figured that allowing programmable features at critical points in the system greatly helped devlopers. They came up with what was called ARB. This simple language paved the way for the current pipeline.</p>
+
+<p><a href="https://camo.githubusercontent.com/2e93bb664a063f0c5652a5d26b27b0d28929ca77/687474703a2f2f7777772e33646765702e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031342f30322f4f70656e474c2d46697865642d46756e6374696f6e2d506970656c696e65312e706e67" target="_blank"><img src="https://camo.githubusercontent.com/2e93bb664a063f0c5652a5d26b27b0d28929ca77/687474703a2f2f7777772e33646765702e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031342f30322f4f70656e474c2d46697865642d46756e6374696f6e2d506970656c696e65312e706e67" alt="Fixed Function Pipeline" data-canonical-src="http://www.3dgep.com/wp-content/uploads/2014/02/OpenGL-Fixed-Function-Pipeline1.png" style="max-width:100%;"></a></p>
+
+<h2>
+<a id="user-content-opengl-programmable-graphics-pipeline" class="anchor" href="#opengl-programmable-graphics-pipeline" aria-hidden="true"><span class="octicon octicon-link"></span></a>OpenGL Programmable Graphics Pipeline</h2>
+
+<p>Eventually the Programmable Pipeline came into existence and gave developers control over virtually every aspect of the graphics pipeline. This level of control is orchestrated in what are called shader programs or shaders. </p>
+
+<h3>
+<a id="user-content-what-are-shaders" class="anchor" href="#what-are-shaders" aria-hidden="true"><span class="octicon octicon-link"></span></a>What are shaders?</h3>
+
+<p>Shaders are simply programs that are run on a GPU. Although the name implies that it has to do with shading, shading is one of many things that it can do. In OpenGL shaders are written in the OpenGL Shading Language(GLSL). GLSL is very much like C. </p>
+
+<h4>
+<a id="user-content-why-run-programs-on-a-gpu" class="anchor" href="#why-run-programs-on-a-gpu" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why run programs on a GPU?</h4>
+
+<p>GPUs are designed with many processors or cores with specially designed hardware to do certain mathimatical operations very quickly such as matrix transformations. GPU are also designed for throughput of data, meaning lots of data can stream through it very quickly. Shader programs are assigned cores or processors that allow them to run in parallel to each each increasing overall performance. This website provides a much more in depth view if you are curious: <a href="https://fgiesen.wordpress.com/2011/07/09/a-trip-through-the-graphics-pipeline-2011-index/">fgiesen.wordpress.com</a></p>
+
+<h4>
+<a id="user-content-shader-types" class="anchor" href="#shader-types" aria-hidden="true"><span class="octicon octicon-link"></span></a>Shader Types</h4>
+
+<p>There are currently 5 different types of shader programs. Each type is responsible for certain tasks in the pipeline. They are:</p>
+
+<ul>
+<li>Vertex
+
+<ul>
+<li>Handle Vertex Transformations (Explained more later) </li>
+</ul>
+</li>
+<li>Fragment
+
+<ul>
+<li>Handles a group of pixels called a fragment, primarily used for setting color and depth</li>
+</ul>
+</li>
+<li>Geometry
+
+<ul>
+<li>Work on a set of vertices that form a figure</li>
+</ul>
+</li>
+<li>Tesselation
+
+<ul>
+<li>Forming tesselations on objects that can be useful for controlling detail based on distance</li>
+</ul>
+</li>
+<li>Compute
+
+<ul>
+<li>Computes on raw data. Not necessarily graphics specific.</li>
+</ul>
+</li>
+</ul>
+
+<p>In this tutorial we will be using only the vertex and fragment shaders as they are simpler and most widely supported. Compute Shaders are only available in OpenGl 4.3. </p>
+
+<h4>
+<a id="user-content-what-makes-up-a-shader" class="anchor" href="#what-makes-up-a-shader" aria-hidden="true"><span class="octicon octicon-link"></span></a>What makes up a shader?</h4>
+
+<p>A shader is made up of special variables called attributes and uniforms. Attributes are variables that change extremely often and many types are quite large. Attributes are typically used for vertex coordinates or other frequently changing data. Uniforms are variables that are used for much slower data. Typically this may include matrix transformations such as those defined by <code>gluLookat</code>, <code>gluOrth</code>, and <code>gluPerspective</code>. It may also include lighting information or anything else that could be used. A list of all built in variables can be found <a href="https://www.opengl.org/wiki/Built-in_Variable_%28GLSL%29">here</a>.</p>
+
+<h4>
+<a id="user-content-how-do-they-fit-in-the-new-pipeline-ordered" class="anchor" href="#how-do-they-fit-in-the-new-pipeline-ordered" aria-hidden="true"><span class="octicon octicon-link"></span></a>How do they fit in the new pipeline? (Ordered)</h4>
+
+<p><a href="https://camo.githubusercontent.com/c31ac3b0ac3496f0f1183574a09b0de732eafdb8/687474703a2f2f7777772e33646765702e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031342f30322f4f70656e474c2d342e302d506970656c696e652e706e67" target="_blank"><img src="https://camo.githubusercontent.com/c31ac3b0ac3496f0f1183574a09b0de732eafdb8/687474703a2f2f7777772e33646765702e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031342f30322f4f70656e474c2d342e302d506970656c696e652e706e67" alt="Programmable Pipeline" data-canonical-src="http://www.3dgep.com/wp-content/uploads/2014/02/OpenGL-4.0-Pipeline.png" style="max-width:100%;"></a></p>
+
+<ul>
+<li>Vertex Shaders
+
+<ul>
+<li>Takes Model Coordinates as a vertex array object (VAO) and vertex buffer objects (VBO)
+
+<ul>
+<li>Intimately handles what used to happen with glVertex<br>
+</li>
+<li>VBOs
+
+<ul>
+<li>Buffers of video memory </li>
+<li>Can be anything, simply copies a chunk of memory</li>
+</ul>
+</li>
+<li>VAO
+
+<ul>
+<li>Link VBO to actual shader variables.</li>
+<li>Describes type and what shader variable it refers to.</li>
+</ul>
+</li>
+<li>Will be discussed more in video demo on full project setup<br>
+</li>
+</ul>
+</li>
+<li>Output will be in Clipping Coordinates:
+
+<ul>
+<li>gl_Position</li>
+<li>gl_PointSize</li>
+<li>gl_ClipDistance[]</li>
+</ul>
+</li>
+<li>This means the programmer must perform these transformations in the vertex shader to transform from modeling Coordinates to Clipping Coordinates
+
+<ul>
+<li> Commonly Call "MVP"<br>
+</li>
+<li>Modeling Transformation
+
+<ul>
+<li>(Model Coordinates -&gt; World Coordinates) </li>
+<li>Position Model in World</li>
+</ul>
+</li>
+<li>Viewing Transformation
+
+<ul>
+<li>(World Coordinates -&gt; View/Eye Coordinates) </li>
+<li>Position Camera</li>
+</ul>
+</li>
+<li>Projection Transformation
+
+<ul>
+<li>(View/Eye Coordinates -&gt; Clip Coordinates) </li>
+<li>Orthographic or Perspective?</li>
+</ul>
+</li>
+<li>Clipping Coordinates are then set to the built in gl_Position attribute
+
+<ul>
+<li>In the range of -1f to 1f in each direction</li>
+</ul>
+</li>
+<li> Reference: <a href="https://en.wikibooks.org/wiki/GLSL_Programming/Vertex_Transformations">https://en.wikibooks.org/wiki/GLSL_Programming/Vertex_Transformations</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Geometry and Tesselation Shaders</li>
+<li>Rasterization
+
+<ul>
+<li>Clip Coordinates -&gt; Normalized device coordinates -&gt; screen/window coordinates</li>
+<li>performs perspective division using gl_Position.w</li>
+</ul>
+</li>
+<li>Fragment Shaders
+
+<ul>
+<li>After Rasterization, a sample of pixels is generated into whats called a fragment.</li>
+<li>The Fragment's color and depth can be set in this shader</li>
+</ul>
+</li>
+</ul>
+
+<p><a href="tutorial_1.html">Tutorial 1</a></p>
+</article></body></html>
